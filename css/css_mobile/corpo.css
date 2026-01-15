@@ -1,0 +1,44 @@
+body {
+	background-color: #f7f4ed;
+	height: 100dvh;
+	width: 100dvw;
+}
+.home {
+	height: calc(100dvh - 2.5rem);
+	width: 100dvw;
+	overflow: hidden;
+}
+.home-image {
+	height: auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 70%;
+	width: 100%;
+	background-image: url("../../fundo.webp");
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.home-image * {
+	display: block;
+	height: auto;
+}
+.home-image img {
+	height: 100%;
+}
+.home-text {
+	height: 30%;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.home-text h1{
+   color: rgb(148, 82, 1);
+   padding: 0 1.1rem;
+   text-align: center;
+}
