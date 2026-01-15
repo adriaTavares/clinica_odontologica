@@ -1,8 +1,6 @@
-body {
-	background-color: #f7f4ed;
-	height: 100dvh;
-	width: 100dvw;
-}
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
+
+
 .home {
 	height: calc(100dvh - 2.5rem);
 	width: 100dvw;
@@ -37,8 +35,9 @@ body {
 	align-items: center;
 	justify-content: center;
 }
-.home-text h1{
-   color: rgb(148, 82, 1);
-   padding: 0 1.1rem;
-   text-align: center;
+.home-text h1 {
+	font-family: "Great Vibes", cursive;
+	color: rgb(148, 82, 1);
+	padding: 0 1.1rem;
+	text-align: center;
 }

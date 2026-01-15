@@ -1,5 +1,5 @@
 :root {
-	--tamanho-header: calc(100dvh - 2.5rem);
+	--altura-menu: 3.5rem;
 }
 header {
 	display: flex;
@@ -8,12 +8,11 @@ header {
 	height: 2.5rem;
 	box-shadow: 2px 0 4px black;
 	justify-content: end;
-	padding: 1rem;
 	gap: 1rem;
-	position: relative;
+	position: sticky;
 	z-index: 1000;
-   overflow: hidden;
-   width: 100dvw;
+	width: 100dvw;
+	top: 0;
 }
 
 .menu-mobile {
@@ -60,14 +59,13 @@ header {
 }
 .nav-list {
 	position: fixed;
-	height: var(--tamanho-header);
+	height: calc(100dvh - var(--altura-menu));
 	width: 70%;
 	background-color: rgb(255, 253, 253);
 	bottom: 0;
 	right: 0;
 	transform: translateX(100%);
 	transition: 0.5s;
-	visibility: hidden;
 	border-left: 1px solid rgb(207, 207, 207);
 	list-style: none;
 	display: flex;
