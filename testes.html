@@ -1,65 +1,29 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Document</title>
 		<style>
-			.modal-overlay {
-				position: fixed;
-				inset: 0;
-				background: rgba(0, 0, 0, 0.6);
-				display: flex;
-				align-items: center;
-				justify-content: center;
-				z-index: 9999;
-
-				opacity: 0;
-				pointer-events: none;
-				transition: 0.3s;
-			}
-
-			.modal-overlay.active {
-				opacity: 1;
-				pointer-events: all;
-			}
-
-			.modal {
-				background: white;
-				padding: 1.5rem;
-				border-radius: 8px;
-				min-width: 280px;
+			/* .pai {
 				position: relative;
+				width: 500px;
+				height: 500px;
+				background: rgb(210, 0, 0);
+				transform: skew(20deg, 30deg);
+			} */
+			img {
+				width: 300px;
+				height: auto;
+				border: 2px solid black;
+				transform: skew(-20deg, -30deg);
 			}
-
-			.modal-close {
-				position: absolute;
-				top: 0.5rem;
-				right: 0.5rem;
-			}
-         
 		</style>
 	</head>
 	<body>
-		<div class="modal-overlay">
-			<div class="modal">
-				<button class="modal-close">X</button>
-				<p>Isso é um alerta que bloqueia tudo.</p>
-			</div>
-		</div>
-		<script>
-			const modal = document.querySelector(".modal-overlay");
-			const closeBtn = document.querySelector(".modal-close");
-
-			function abrirModal() {
-				modal.classList.add("active");
-			}
-
-			function fecharModal() {
-				modal.classList.remove("active");
-			}
-			closeBtn.addEventListener("click", fecharModal);
-         abrirModal()
-		</script>
+		<img
+			src="../arquitetura_clinica_odontologica/home/doutora_img/imagens_doutora/doutora_mobile.webp"
+			alt=""
+		/>
 	</body>
 </html>

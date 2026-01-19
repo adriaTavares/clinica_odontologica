@@ -1,0 +1,12 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: var(--font-texto-geral);
+}
+body {
+	background-color: var(--cor-fundo);
+	color: black;
+	width: 100dvw;
+	overflow-x: hidden;
+}

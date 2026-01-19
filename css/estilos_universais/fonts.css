@@ -1,0 +1,22 @@
+/* font do nome da clínica  que vai ficar no menu*/
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap");
+
+/* font do texto geral do site*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* font do texto dos botões e títulos secundários*/
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap");
+
+/* font dos títulos principais*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+/* font alternativa*/
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+
+:root {
+	--font-clinica: "Kaushan Script", cursive;
+	--font-texto-geral: "Poppins", sans-serif;
+	--font-botoes-titulos-secundarios: "Merriweather", serif;
+	--font-titulos-principais: "Roboto", sans-serif;
+	--font-alternativa: "Quicksand", sans-serif;
+}
