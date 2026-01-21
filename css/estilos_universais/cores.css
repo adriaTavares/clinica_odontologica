@@ -8,4 +8,5 @@
 		var(--azul-claro) var(--azul-escuro),
 		var(--azul-max-escuro)
 	);
+   --sombra: rgb(200, 200, 200);
 }
