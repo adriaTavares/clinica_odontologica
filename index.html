@@ -3,17 +3,24 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- Estilos presentes em todos os dispositivos  -->
+
 		<link rel="stylesheet" href="css/estilos_universais/fonts.css" />
 		<link rel="stylesheet" href="css/estilos_universais/cores.css" />
 		<link rel="stylesheet" href="css/estilos_universais/padronizacao.css" />
-		<!-- Estilos presentes em todos os dispositivos  -->
+		<!-- mobile -->
+		<link rel="stylesheet" href="css/css_mobile/navegacao.css" />
+		<link rel="stylesheet" href="css/css_mobile/corpo.css" />
+		<link rel="stylesheet" href="css/css_mobile/footer_aside.css" />
+		<!-- tablet -->
+		<link rel="stylesheet" href="css/css_tablet/navegacao.css" />
+		<link rel="stylesheet" href="css/css_tablet/corpo.css" />
+		<link rel="stylesheet" href="css/css_tablet/footer_aside.css" />
+		<!-- desktop -->
 		<link rel="stylesheet" href="css/css_desktop/navegacao.css" />
 		<link rel="stylesheet" href="css/css_desktop/corpo.css" />
 		<link rel="stylesheet" href="css/css_desktop/footer_aside.css" />
-		<!-- desktop -->
-		<link rel="stylesheet" href="css/css_mobile/corpo.css" />
-		<link rel="stylesheet" href="css/css_mobile/navegacao.css" />
-		<link rel="stylesheet" href="css/css_mobile/footer_aside.css" />
+
 		<title>Clinica odontológica</title>
 	</head>
 	<body>
@@ -21,7 +28,7 @@
 			<h1>Novo Sorriso</h1>
 			<nav>
 				<ul class="nav-list">
-					<li class="nav-item"><a href="#">inicio</a></li>
+					<li class="nav-item active"><a href="#">inicio</a></li>
 					<li class="nav-item"><a href="#">serviços</a></li>
 					<li class="nav-item"><a href="#">sobre</a></li>
 					<li class="nav-item"><a href="#">equipe</a></li>
@@ -29,18 +36,60 @@
 					<li class="nav-item"><a href="#">agendamento</a></li>
 					<li class="nav-item"><a href="#">depoimentos</a></li>
 				</ul>
+				<div class="redes-sociais-menu">
+					<div class="redes-sociais-icons">
+						<div class="redes-sociais-icon">I</div>
+						<div class="redes-sociais-icon">F</div>
+						<div class="redes-sociais-icon">W</div>
+					</div>
+					<h3>(99)9999-9999</h3>
+				</div>
 			</nav>
-			<div class="menu-mobile">
-				<span class="menu-linha"></span>
+
+			<div class="icon-menu-mobile">
+				<span class="icon-menu-linha"></span>
 			</div>
 		</header>
 		<main>
 			<section class="inicio">
-            <div class="home-image">
-               <img src=". " alt="">
-            </div>
+				<div class="home-image">
+					<picture>
+						<source
+							media="(max-width:500px)"
+							srcset="
+								images/imagens_mobile/home/imagens_doutora/doutora_mobile.webp
+							"
+						/>
+						<source
+							media="(max-width:900px)"
+							srcset="
+								images/imagens_tablet/home/imagens_doutora/doutora_tablet.webp
+							"
+						/>
+						<img
+							src="images/imagens_tablet/home/imagens_doutora/doutora_desktop.webp"
+							alt=""
+						/>
+					</picture>
+				</div>
+				<h2>
+					<span class="span-azul-escuro">Seu</span>
+					sorriso
+					<br />
+					<span class="span-azul-escuro">é</span>
+					<br />
+					nosso
+					<span class="span-azul-escuro">conforto</span>
+				</h2>
+				<button>
+					Agendar consulta
+					<br />
+					(99) 9999-9999
+				</button>
+			</section>
+			<section class="servicos">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem voluptatum libero consequuntur autem. Suscipit rem tempore error excepturi recusandae, quae architecto perspiciatis atque eaque nostrum quas obcaecati beatae molestias neque accusamus est enim quibusdam unde voluptate sunt eveniet consequatur. Consequatur perferendis saepe officiis? Asperiores deserunt reprehenderit unde possimus in dolorum accusamus at minus fugit, tempore facere omnis incidunt, consectetur et dolor eos impedit corrupti optio sunt eum aperiam nulla amet a. Quidem corporis ad libero voluptate nesciunt laudantium assumenda facere optio quae ipsum totam suscipit nemo repellendus temporibus, placeat ullam sequi nihil! Itaque exercitationem, cumque voluptatum fugiat facilis rem velit beatae, quis nihil voluptatem praesentium iste aliquam non quidem. Dolor saepe doloremque reiciendis. Molestias ipsa aliquid nostrum sapiente saepe? Vel exercitationem autem neque tenetur suscipit labore facere, nulla ea error quibusdam reprehenderit ipsa omnis modi nobis officia beatae officiis. Aliquid a odit earum iste quisquam omnis ducimus possimus, necessitatibus, voluptatum, tenetur mollitia vitae temporibus quas aperiam quia libero. Id numquam hic in veritatis, ipsam facilis molestias maxime ullam? Recusandae dolore nobis ab, numquam adipisci, ipsa a molestias voluptas, consequatur dolorem facere sapiente tenetur veniam sed atque hic. Non asperiores id laboriosam, deleniti, architecto placeat labore, magni nisi numquam velit libero.
          </section>
-			<section class="servicos"></section>
 			<section class="sobre"></section>
 			<section class="equipe"></section>
 			<section class="contato"></section>
@@ -49,6 +98,7 @@
 		</main>
 		<footer></footer>
 		<aside></aside>
+		<script src="js/efeitos/menu_mobiile.js"></script>
 		<script src="js/efeitos/observador.js"></script>
 		<script src="js/menu/links_menu.js"></script>
 		<script src="js/slide/desktop.js"></script>

@@ -5,8 +5,9 @@
 	--cor-fundo: #f4f4ff;
 	--gradiente-azul: linear-gradient(
 		to right,
-		var(--azul-claro) var(--azul-escuro),
+		var(--azul-claro),
+		var(--azul-escuro),
 		var(--azul-max-escuro)
 	);
-   --sombra: rgb(200, 200, 200);
+	--sombra: rgb(200, 200, 200);
 }
