@@ -13,4 +13,6 @@ body {
 .Desativado {
 	pointer-events: none;
 	filter: blur(20px);
+   height: 0;
+   overflow: hidden;
 }

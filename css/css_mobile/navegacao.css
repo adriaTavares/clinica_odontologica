@@ -4,8 +4,8 @@
 header {
 	display: flex;
 	justify-content: space-between;
-	padding-left:.5rem;
-   padding-right:2rem ;
+	padding-left: 0.5rem;
+	padding-right: 2rem;
 	align-items: center;
 	background-color: rgb(255, 255, 255);
 	width: 100%;
@@ -13,7 +13,7 @@ header {
 	box-shadow: 0 2px 5px var(--sombra);
 	position: sticky;
 	z-index: 10000;
-   top: 0;
+	top: 0;
 }
 header h1 {
 	font-family: var(--font-clinica);
@@ -28,13 +28,13 @@ nav {
 	flex-direction: column;
 	align-items: center;
 	height: calc(100dvh - var(--height-header-mobile));
-	width: 100dvw;
+	width: 100vw;
 	position: absolute;
 	top: var(--height-header-mobile);
 	left: 0;
-   opacity: 0;
+	opacity: 0;
 	transition: 0.5s;
-
+   overflow: hidden;
 }
 nav.active {
 	opacity: 1;
@@ -50,6 +50,7 @@ nav.active {
 	gap: 1rem;
 }
 .nav-item {
+	font-family: var(--font-texto-gera);
 	height: 2.2rem;
 	width: 90%;
 	background-color: rgb(245, 245, 245);
@@ -113,6 +114,7 @@ nav.active {
 	position: relative;
 	pointer-events: none;
 	transition: 0.5s;
+   border-radius: 5px;
 }
 
 .icon-menu-linha::before,
@@ -123,7 +125,7 @@ nav.active {
 	height: 100%;
 	background-color: currentColor;
 	left: 0;
-	border-radius: 5px;
+   border-radius: inherit;
 }
 .icon-menu-linha::before {
 	transform: translateY(2em);
