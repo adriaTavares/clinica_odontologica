@@ -1,49 +1,94 @@
-.inicio {
-	width: 100dvw;
-	height: calc(100dvh - var(--height-header-mobile));
+main {
 	display: flex;
 	flex-direction: column;
-	justify-content: start;
 	align-items: center;
-	gap: 5%;
+	justify-content: start;
+	gap: 5rem;
+   width: 100%;
 }
+#inicio {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+	gap: 2rem;
+}
+
 .home-image {
 	background-color: var(--azul-claro);
 	width: 95%;
-	height: 50%;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+	height: 45vh; /* altura real */
+	max-height: 280px; /* limite */
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	border-radius: 3%;
 	margin: 0.5rem 0;
 }
+
 .home-image picture {
+	width: 100%;
 	height: 100%;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 }
+
 .home-image picture img {
-	height: 100%;
+	max-width: 100%;
+	max-height: 100%;
 	object-fit: contain;
 }
-.inicio h2 {
+
+#inicio h2 {
 	color: var(--azul-claro);
 	text-align: center;
-	font-size: 1.8rem;
 }
-.inicio h2 span {
+#inicio h2 span {
 	color: var(--azul-max-escuro);
 }
-.inicio button {
+#inicio button {
 	border: none;
 	width: 80%;
-	font-size: 1.5rem;
+	font-size: clamp(1.3rem, 2vw, 2.5rem);
 	background: var(--gradiente-azul);
 	border-radius: 1rem;
-	font-family: --font-titulos-principais;
-	color: white;
+	font-family: var(--font-titulos-principais);
+	color: rgb(255, 255, 255);
+	display: block;
+}
+#inicio button:active {
+	background: rgb(0, 74, 154);
+}
+
+#localizacao {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+}
+#localizacao h2 {
+	color: var(--azul-claro);
+	text-align: center;
+}
+#localizacao .iframe-localizacao {
+	width: 85%;
+	aspect-ratio: 1/1;
+	max-width: 500px;
+	border: 3px outset rgb(2, 155, 215);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.iframe-localizacao iframe {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.localizacao-texto {
+	text-align: center;
+	font-size: clamp(20px, 1rem, 2rem);
+	padding: 1rem;
 }

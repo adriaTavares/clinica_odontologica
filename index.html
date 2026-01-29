@@ -12,6 +12,7 @@
 		<link rel="stylesheet" href="css/css_mobile/navegacao.css" />
 		<link rel="stylesheet" href="css/css_mobile/corpo.css" />
 		<link rel="stylesheet" href="css/css_mobile/footer_aside.css" />
+		<link rel="stylesheet" href="css/css_mobile/depoimentos.css" />
 		<!-- tablet -->
 		<link rel="stylesheet" href="css/css_tablet/navegacao.css" />
 		<link rel="stylesheet" href="css/css_tablet/corpo.css" />
@@ -28,19 +29,42 @@
 			<h1>Novo Sorriso</h1>
 			<nav>
 				<ul class="nav-list">
-					<li class="nav-item active"><a href="#">inicio</a></li>
-					<li class="nav-item"><a href="#">serviços</a></li>
-					<li class="nav-item"><a href="#">sobre</a></li>
-					<li class="nav-item"><a href="#">equipe</a></li>
-					<li class="nav-item"><a href="#">contato</a></li>
-					<li class="nav-item"><a href="#">agendamento</a></li>
-					<li class="nav-item"><a href="#">depoimentos</a></li>
+					<li class="nav-item active">
+						<a href="./index.html">inicio</a>
+					</li>
+					<li class="nav-item">
+						<a href="servicos.html">serviços</a>
+					</li>
+					<li class="nav-item">
+						<a href="sobre.html">sobre</a>
+					</li>
+					<li class="nav-item">
+						<a href="./agendamento.html">agendamento</a>
+					</li>
+					<li class="nav-item">
+						<a href="#depoimentos">depoimentos</a>
+					</li>
+					<li class="nav-item">
+						<a href="#localizacao">localização</a>
+					</li>
 				</ul>
 				<div class="redes-sociais-menu">
 					<div class="redes-sociais-icons">
-						<div class="redes-sociais-icon">I</div>
-						<div class="redes-sociais-icon">F</div>
-						<div class="redes-sociais-icon">W</div>
+						<div class="redes-sociais-icon">
+							<img
+								src="images/imagens_mobile/apps/whatsapp.webp"
+								alt=""
+							/>
+						</div>
+						<div class="redes-sociais-icon">
+							<img src="images/imagens_mobile/apps/insta.webp" alt="" />
+						</div>
+						<div class="redes-sociais-icon">
+							<img
+								src="images/imagens_mobile/apps/facebook.webp"
+								alt=""
+							/>
+						</div>
 					</div>
 					<h3>(99)9999-9999</h3>
 				</div>
@@ -50,12 +74,13 @@
 				<span class="icon-menu-linha"></span>
 			</div>
 		</header>
+
 		<main>
-			<section class="inicio">
+			<section class="animadoReveal" id="inicio">
 				<div class="home-image">
 					<picture>
 						<source
-							media="(max-width:500px)"
+							media="(max-width:600px)"
 							srcset="
 								images/imagens_mobile/home/imagens_doutora/doutora_mobile.webp
 							"
@@ -81,23 +106,181 @@
 					nosso
 					<span class="span-azul-escuro">conforto</span>
 				</h2>
-				<button>
+				<button onclick="window.location.href = './agendamento.html'">
 					Agendar consulta
 					<br />
 					(99) 9999-9999
 				</button>
 			</section>
-			<section class="servicos">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem voluptatum libero consequuntur autem. Suscipit rem tempore error excepturi recusandae, quae architecto perspiciatis atque eaque nostrum quas obcaecati beatae molestias neque accusamus est enim quibusdam unde voluptate sunt eveniet consequatur. Consequatur perferendis saepe officiis? Asperiores deserunt reprehenderit unde possimus in dolorum accusamus at minus fugit, tempore facere omnis incidunt, consectetur et dolor eos impedit corrupti optio sunt eum aperiam nulla amet a. Quidem corporis ad libero voluptate nesciunt laudantium assumenda facere optio quae ipsum totam suscipit nemo repellendus temporibus, placeat ullam sequi nihil! Itaque exercitationem, cumque voluptatum fugiat facilis rem velit beatae, quis nihil voluptatem praesentium iste aliquam non quidem. Dolor saepe doloremque reiciendis. Molestias ipsa aliquid nostrum sapiente saepe? Vel exercitationem autem neque tenetur suscipit labore facere, nulla ea error quibusdam reprehenderit ipsa omnis modi nobis officia beatae officiis. Aliquid a odit earum iste quisquam omnis ducimus possimus, necessitatibus, voluptatum, tenetur mollitia vitae temporibus quas aperiam quia libero. Id numquam hic in veritatis, ipsam facilis molestias maxime ullam? Recusandae dolore nobis ab, numquam adipisci, ipsa a molestias voluptas, consequatur dolorem facere sapiente tenetur veniam sed atque hic. Non asperiores id laboriosam, deleniti, architecto placeat labore, magni nisi numquam velit libero.
-         </section>
-			<section class="sobre"></section>
-			<section class="equipe"></section>
-			<section class="contato"></section>
-			<section class="agendamento"></section>
-			<section class="depoimentos"></section>
+			<section class="animadoReveal" id="depoimentos">
+				<h2>O que acham da gente</h2>
+				<div class="slider">
+					<button class="btn-slider btn-previous">&lt;</button>
+
+					<div class="track-box">
+						<div class="track">
+							<div class="slide">
+								<div class="slide-image">
+									<img
+										src="./images/imagens_mobile/home/imgs_avaliacoes/maria.webp"
+									/>
+								</div>
+								<div class="slide-comentario">
+									Lorem ipsum dolor sit amet consectetur adipisicing
+									elit. Sint, soluta molestiae. Saepe ipsa repellendus
+									pariatur eum enim? Officia unde, labore non
+									temporibus, nesciunt corporis nisi repellendus
+									tenetur debitis tempore voluptate.
+								</div>
+								<div class="slide-footer">
+									<div class="slide-estrelas">
+										<img
+											src="./images/imagens_mobile/home/imgs_avaliacoes/estrelas.webp"
+										/>
+									</div>
+									<h3>
+										Maria
+										<br />
+										Google
+									</h3>
+								</div>
+							</div>
+
+							<div class="slide">
+								<div class="slide-image">
+									<img
+										src="./images/imagens_mobile/home/imgs_avaliacoes/marcelo.webp"
+									/>
+								</div>
+								<div class="slide-comentario">
+									Lorem ipsum dolor, sit amet consectetur adipisicing
+									elit. Est accusantium molestias nesciunt labore
+									reiciendis doloribus repudiandae! Sed praesentium
+									maxime dolores placeat blanditiis! Quia neque illum
+									quaerat ullam natus facere vero.
+								</div>
+								<div class="slide-footer">
+									<div class="slide-estrelas">
+										<img
+											src="./images/imagens_mobile/home/imgs_avaliacoes/estrelas.webp"
+										/>
+									</div>
+									<h3>
+										Marcelo
+										<br />
+										Facebook
+									</h3>
+								</div>
+							</div>
+
+							<div class="slide">
+								<div class="slide-image">
+									<img
+										src="./images/imagens_mobile/home/imgs_avaliacoes/ana.webp"
+									/>
+								</div>
+								<div class="slide-comentario">
+									Lorem ipsum dolor sit, amet consectetur adipisicing
+									elit. Ipsum quisquam inventore perspiciatis voluptas
+									nesciunt. Consequuntur provident modi facilis eaque,
+									in sunt iste, laboriosam voluptatum repudiandae nihil
+									ad, expedita perferendis corrupti!
+								</div>
+								<div class="slide-footer">
+									<div class="slide-estrelas">
+										<img
+											src="./images/imagens_mobile/home/imgs_avaliacoes/estrelas.webp"
+										/>
+									</div>
+									<h3>
+										Anna
+										<br />
+										Instagram
+									</h3>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<button class="btn-slider btn-next">&gt;</button>
+				</div>
+			</section>
+			<section class="animadoReveal" id="localizacao">
+				<h2>Localizacão</h2>
+				<div class="iframe-localizacao">
+					<iframe
+						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30712.74444542564!2d-47.8797121499883!3d-15.799046565523412!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935a309ae31de7d3%3A0xc7c45a6f5981ca10!2sPal%C3%A1cio%20do%20Planalto!5e0!3m2!1spt-BR!2sbr!4v1769473704566!5m2!1spt-BR!2sbr"
+						width="600"
+						height="450"
+						style="border: 0"
+						allowfullscreen=""
+						loading="lazy"
+						referrerpolicy="no-referrer-when-downgrade"
+					></iframe>
+				</div>
+				<div class="localizacao-texto">
+					<address>
+						<strong>Endereço</strong>: Praça dos Três Poderes, Zona
+						Cívico-Administrativa, Brasília - DF, CEP 70165-900.
+					</address>
+					<br />
+					<address>
+						<strong>Localização</strong>: Extremo leste do Eixo
+						Monumental, fazendo parte da Praça dos Três Poderes, junto com
+						o Palácio do Planalto e o Supremo Tribunal Federal (STF).
+					</address>
+				</div>
+			</section>
 		</main>
-		<footer></footer>
-		<aside></aside>
+		<footer>
+			<div>
+				<h2>Horário de Expediente</h2>
+				<p>
+					Seg 9:00 am - 5:00 pm
+					<br />
+					Ter 9:00 am - 5:00 pm
+					<br />
+					Qua 9:00 am - 5:00 pm
+					<br />
+					Qui 9:00 am - 5:00 pm
+					<br />
+					Sex 9:00 am - 5:00 pm
+				</p>
+			</div>
+			<div>
+				<h2>Contate-nos</h2>
+				<div class="footer-icons">
+					<div class="footer-icon">
+						<img src="images/imagens_mobile/apps/whatsapp.webp" alt="" />
+					</div>
+					<div class="footer-icon">
+						<img src="images/imagens_mobile/apps/insta.webp" alt="" />
+					</div>
+					<div class="footer-icon">
+						<img src="images/imagens_mobile/apps/facebook.webp" alt="" />
+					</div>
+				</div>
+				<p>
+					(99) 9999-9999
+					<br />
+					adria.tavares.2008@gmail.com
+				</p>
+			</div>
+			<div>
+				<h2>Outras redes</h2>
+				<div class="footer-icons">
+					<div class="footer-icon">
+						<img src="images/imagens_mobile/apps/whatsapp.webp" alt="" />
+					</div>
+					<div class="footer-icon">
+						<img src="images/imagens_mobile/apps/whatsapp.webp" alt="" />
+					</div>
+				</div>
+			</div>
+			<div class="logo-footer">
+				<h1>Novo Sorriso</h1>
+			</div>
+		</footer>
 		<script src="js/efeitos/menu_mobiile.js"></script>
 		<script src="js/efeitos/observador.js"></script>
 		<script src="js/menu/links_menu.js"></script>
