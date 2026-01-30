@@ -32,7 +32,7 @@ footer p {
 	width: clamp(20px, 14vw, 40px);
 	aspect-ratio: 1/1;
 }
-.logo-footer h1 {
+.logo-footer h3 {
 	font-family: var(--font-clinica);
 	font-weight: 900;
 	color: rgb(63, 62, 62);
@@ -41,3 +41,4 @@ footer p {
 .logo-footer {
 	background: transparent;
 }
+

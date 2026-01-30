@@ -19,10 +19,13 @@
         <link rel="stylesheet" href="css/css_tablet/navegacao.css" />
         <link rel="stylesheet" href="css/css_tablet/corpo.css" />
         <link rel="stylesheet" href="css/css_tablet/footer_aside.css" />
+        <link rel="stylesheet" href="css/css_tablet/depoimentos.css" />
+
         <!-- desktop -->
         <link rel="stylesheet" href="css/css_desktop/navegacao.css" />
         <link rel="stylesheet" href="css/css_desktop/corpo.css" />
         <link rel="stylesheet" href="css/css_desktop/footer_aside.css" />
+        <link rel="stylesheet" href="css/css_desktop/depoimentos.css" />
 
         <title>Clinica odontológica</title>
     </head>
@@ -31,14 +34,14 @@
         <header>
             <h1>Novo Sorriso</h1>
             <nav></nav>
-            <div class="menu-mobile" arial-controls="menu">
+            <div class="menu-mobile" aria-controls="menu">
                 <span class="menu-mobile-linha"></span>
             </div>
         </header>
         <nav class="nav-mobile">
             <ul class="nav-list-mobile">
-                <li class="nav-item-mobile active">
-                    <a href="./index.html">inicio</a>
+                <li class="nav-item-mobile active" data-target="inicio">
+                    <a href="#inicio">inicio</a>
                 </li>
                 <li class="nav-item-mobile">
                     <a href="servicos.html">serviços</a>
@@ -49,11 +52,11 @@
                 <li class="nav-item-mobile">
                     <a href="./agendamento.html">agendamento</a>
                 </li>
-                <li class="nav-item-mobile">
-                    <a href="index.html#depoimentos">depoimentos</a>
+                <li class="nav-item-mobile" data-target="depoimentos">
+                    <a href="#depoimentos">depoimentos</a>
                 </li>
-                <li class="nav-item-mobile">
-                    <a href="index.html#localizacao">localização</a>
+                <li class="nav-item-mobile" data-target="localizacao">
+                    <a href="#localizacao">localização</a>
                 </li>
             </ul>
             <div class="menu-mobile-footer">
@@ -89,7 +92,7 @@
                             "
                         />
                         <img
-                            src="images/home/imagens_doutora/doutora_desktop.webp"
+                            src="images/home/imagens_doutora/doutora.webp"
                             alt=""
                         />
                     </picture>
@@ -119,7 +122,7 @@
                             <div class="slide">
                                 <div class="slide-image">
                                     <img
-                                        src="./images/imagens_mobile/home/imgs_avaliacoes/maria.webp"
+                                        src="./images/home/imgs_avaliacoes/maria.webp"
                                     />
                                 </div>
                                 <div class="slide-comentario">
@@ -133,7 +136,7 @@
                                 <div class="slide-footer">
                                     <div class="slide-estrelas">
                                         <img
-                                            src="./images/imagens_mobile/home/imgs_avaliacoes/estrelas.webp"
+                                            src="./images/home/imgs_avaliacoes/estrelas.webp"
                                         />
                                     </div>
                                     <h3>
@@ -147,7 +150,7 @@
                             <div class="slide">
                                 <div class="slide-image">
                                     <img
-                                        src="./images/imagens_mobile/home/imgs_avaliacoes/marcelo.webp"
+                                        src="./images/home/imgs_avaliacoes/marcelo.webp"
                                     />
                                 </div>
                                 <div class="slide-comentario">
@@ -161,7 +164,7 @@
                                 <div class="slide-footer">
                                     <div class="slide-estrelas">
                                         <img
-                                            src="./images/imagens_mobile/home/imgs_avaliacoes/estrelas.webp"
+                                            src="./images/home/imgs_avaliacoes/estrelas.webp"
                                         />
                                     </div>
                                     <h3>
@@ -175,7 +178,7 @@
                             <div class="slide">
                                 <div class="slide-image">
                                     <img
-                                        src="./images/imagens_mobile/home/imgs_avaliacoes/ana.webp"
+                                        src="./images/home/imgs_avaliacoes/ana.webp"
                                     />
                                 </div>
                                 <div class="slide-comentario">
@@ -189,7 +192,7 @@
                                 <div class="slide-footer">
                                     <div class="slide-estrelas">
                                         <img
-                                            src="./images/imagens_mobile/home/imgs_avaliacoes/estrelas.webp"
+                                            src="./images/home/imgs_avaliacoes/estrelas.webp"
                                         />
                                     </div>
                                     <h3>
@@ -280,10 +283,11 @@
                 </div>
             </div>
             <div class="logo-footer">
-                <h1>Novo Sorriso</h1>
+                <h3>Novo Sorriso</h3>
             </div>
         </footer>
         <script src="js/efeitos/observador.js"></script>
+        <script src="js/formatacao_index/formatador_universal.js"></script>
         <script src="js/menu/menu.js"></script>
         <script src="js/slide/desktop.js"></script>
         <script src="js/slide/mobile.js"></script>
