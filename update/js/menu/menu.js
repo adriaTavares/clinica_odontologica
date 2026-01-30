@@ -12,3 +12,4 @@ function ativarMenuMobile() {
     body.classList.toggle("menu-aberto");
 }
 
+// module.exports = ativarMenuMobile;

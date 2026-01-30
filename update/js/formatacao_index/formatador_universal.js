@@ -1,26 +1,35 @@
 const itensMenuHome = [
-    ...document.querySelectorAll(".nav-item-mobile[data-target]"),
+    ...document.querySelectorAll(".nav-item-mobile[data-target]")
 ];
-const sectionsParaMenu = [...document.querySelectorAll("section[id]")];
+
+const sectionsParaMenu = [
+    ...document.querySelectorAll("section[id]")
+];
 
 function modificadorMenu(entries) {
-    const visiveis = entries
-        .filter((entry) => entry.isIntersecting)
-        .sort((a, b) => b.intersectionRatio - a.intersectionRatio);
-    console.log(visiveis);
-    if (!visiveis.length) return;
+    entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
 
-    const idAtivo = visiveis[0].target.id;
+        const id = entry.target.id;
 
-    itensMenuHome.forEach((item) => {
-        item.classList.toggle("active", item.dataset.target === idAtivo);
+        const itemAtivo = itensMenuHome.find(
+            (item) => item.dataset.target === id
+        );
+
+        if (!itemAtivo) return;
+
+        itensMenuHome.forEach((item) =>
+            item.classList.toggle("active", item === itemAtivo)
+        );
     });
 }
 
 const observerMenu = new IntersectionObserver(modificadorMenu, {
     root: null,
-    threshold: 1,
-    rootMargin: "0px",
+    rootMargin: "-40% 0px -40% 0px",
+    threshold: 0,
 });
 
-sectionsParaMenu.forEach((section) => observerMenu.observe(section));
+sectionsParaMenu.forEach((section) =>
+    observerMenu.observe(section)
+);
