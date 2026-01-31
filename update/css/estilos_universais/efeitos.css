@@ -1,5 +1,5 @@
 .animadoReveal {
-    transform: translateX(-70vw) scale(0.8);
+    transform: translateX(-60vw);
     transform-origin: top left;
     transition:
         transform 0.5s ease,
@@ -8,7 +8,7 @@
 }
 
 .animadoReveal:nth-of-type(even) {
-    transform: translateX(70vw) scale(0.8);
+    transform: translateX(60vw);
     transform-origin: right bottom;
     transition:
         transform 0.5s ease,

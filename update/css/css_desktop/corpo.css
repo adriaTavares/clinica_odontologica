@@ -1,94 +1,110 @@
-main {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: start;
-	gap: 5rem;
-   width: 100%;
-}
-#inicio {
-	width: 100%;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: flex-start;
-	gap: 2rem;
-}
+@media (min-width: 900px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+        gap: 10rem;
+        width: 100%;
+    }
+    section {
+        scroll-margin-top: var(--height-header-desktop);
+    }
+    #inicio {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 2rem;
+    }
 
-.home-image {
-	background-color: var(--azul-claro);
-	width: 95%;
-	height: 45vh; /* altura real */
-	max-height: 280px; /* limite */
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	border-radius: 3%;
-	margin: 0.5rem 0;
-}
+    .home-image {
+        background-color: var(--azul-claro);
+        width: 95%;
+        height: 50vh;
+        max-height: 55vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 40px;
+        margin: 0.5rem 0;
+    }
 
-.home-image picture {
-	width: 100%;
-	height: 100%;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
+    .home-image picture {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 
-.home-image picture img {
-	max-width: 100%;
-	max-height: 100%;
-	object-fit: contain;
-}
+    .home-image picture img {
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: contain;
+    }
 
-#inicio h2 {
-	color: var(--azul-claro);
-	text-align: center;
-}
-#inicio h2 span {
-	color: var(--azul-max-escuro);
-}
-#inicio button {
-	border: none;
-	width: 80%;
-	font-size: clamp(1.3rem, 2vw, 2.5rem);
-	background: var(--gradiente-azul);
-	border-radius: 1rem;
-	font-family: var(--font-titulos-principais);
-	color: rgb(255, 255, 255);
-	display: block;
-}
-#inicio button:active {
-	background: rgb(0, 74, 154);
-}
+    #inicio h2 {
+        color: var(--azul-claro);
+        text-align: center;
+    }
+    #inicio h2 span {
+        color: var(--azul-max-escuro);
+    }
+    #inicio button {
+        border: none;
+        width: 40%;
+        font-size: clamp(1.3rem, 2vw, 2.5rem);
+        background: var(--gradiente-azul);
+        border-radius: 1rem;
+        font-family: var(--font-titulos-principais);
+        color: rgb(255, 255, 255);
+        display: block;
+        cursor: pointer;
+    }
+    #inicio button:active {
+        background: rgb(0, 74, 154);
+    }
 
-#localizacao {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: space-between;
-	width: 100%;
-}
-#localizacao h2 {
-	color: var(--azul-claro);
-	text-align: center;
-}
-#localizacao .iframe-localizacao {
-	width: 85%;
-	aspect-ratio: 1/1;
-	max-width: 500px;
-	border: 3px outset rgb(2, 155, 215);
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
-.iframe-localizacao iframe {
-	max-width: 100%;
-	max-height: 100%;
-}
+    #localizacao {
+        height: (100dvh - var(--height-header-desktop));
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        gap: 3rem;
+    }
+    #localizacao h2 {
+        color: var(--azul-claro);
+    }
+    .conteudo-secundario {
+        display: flex;
+        flex-direction: row-reverse; /* ← era column */
+        justify-content: space-between;
+        align-items: start;
+        gap: 3rem;
+        max-width: 90%;
+    }
 
-.localizacao-texto {
-	text-align: center;
-	font-size: clamp(20px, 1rem, 2rem);
-	padding: 1rem;
+    .conteudo-secundario .iframe-localizacao {
+        height: 25rem;
+        width: 25rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: none;
+    }
+    .iframe-localizacao iframe {
+        max-width: 100%;
+        max-height: 100%;
+        border: 3px solid blue;
+    }
+
+    .localizacao-texto {
+        width: 50%;
+        text-align: left;
+        font-size: clamp(20px, 1rem, 2rem);
+        padding: 1rem;
+    }
 }

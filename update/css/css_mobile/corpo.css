@@ -6,8 +6,10 @@ main {
     gap: 5rem;
     width: 100%;
 }
-section[id] {
-    scroll-margin-top: var(--height-header-mobile);
+@media (max-width: 600px) {
+    section {
+        scroll-margin-top: var(--height-header-mobile);
+    }
 }
 #inicio {
     width: 100%;
@@ -76,18 +78,25 @@ section[id] {
     color: var(--azul-claro);
     text-align: center;
 }
-#localizacao .iframe-localizacao {
-    width: 85%;
+.conteudo-secundario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.conteudo-secundario .iframe-localizacao {
+    width: 100%;
     aspect-ratio: 1/1;
-    max-width: 500px;
-    border: 3px outset rgb(2, 155, 215);
     display: flex;
     align-items: center;
     justify-content: center;
+    border: none;
 }
 .iframe-localizacao iframe {
-    max-width: 100%;
-    max-height: 100%;
+    width: 90%;
+    aspect-ratio: 1/1;
+    border: 3px solid blue;
 }
 
 .localizacao-texto {

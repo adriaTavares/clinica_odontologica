@@ -18,21 +18,22 @@ body.menu-aberto {
 }
 
 .camadaBloqueadora {
-  position: fixed;
-  inset: 0;
-  background: rgba(0,0,0,.4);
-  opacity: 0;
-  pointer-events: none;
-  transition: .3s;
-  z-index: 998;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.3s;
+    z-index: 800;
 }
 
 .camadaBloqueadora.active {
-  opacity: 1;
-  pointer-events: all;
+    opacity: 1;
+    pointer-events: all;
 }
 
 h2 {
     font-size: clamp(1.5rem, 8vw, 2rem);
     font-family: var(--font-titulos-principais);
 }
+

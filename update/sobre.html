@@ -16,12 +16,12 @@
         <link rel="stylesheet" href="css/css_mobile/sobre.css" />
         <!-- tablet -->
         <link rel="stylesheet" href="css/css_tablet/navegacao.css" />
-        <link rel="stylesheet" href="css/css_tablet/corpo.css" />
         <link rel="stylesheet" href="css/css_tablet/footer_aside.css" />
+        <link rel="stylesheet" href="css/css_tablet/sobre.css" />
         <!-- desktop -->
         <link rel="stylesheet" href="css/css_desktop/navegacao.css" />
-        <link rel="stylesheet" href="css/css_desktop/corpo.css" />
         <link rel="stylesheet" href="css/css_desktop/footer_aside.css" />
+        <link rel="stylesheet" href="css/css_desktop/sobre.css" />
 
         <title>Clinica odontológica</title>
     </head>
@@ -29,7 +29,39 @@
         <div class="camadaBloqueadora"></div>
         <header>
             <h1>Novo Sorriso</h1>
-            <nav></nav>
+            <nav class="nav-desktop">
+                <ul class="nav-list">
+                    <li class="nav-item" data-target="inicio">
+                        <a href="index.html">inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="servicos.html">serviços</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a href="sobre.html">sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./agendamento.html">agendamento</a>
+                    </li>
+                    <li class="nav-item" data-target="depoimentos">
+                        <a href="index.html#depoimentos">depoimentos</a>
+                    </li>
+                    <li class="nav-item" data-target="localizacao">
+                        <a href="index.html#localizacao">localização</a>
+                    </li>
+                </ul>
+                <div class="desktop-icons">
+                    <div class="desktop-app">
+                        <img src="images/apps/whatsapp.webp" alt="" />
+                    </div>
+                    <div class="desktop-app">
+                        <img src="images/apps/insta.webp" alt="" />
+                    </div>
+                    <div class="desktop-app">
+                        <img src="images/apps/facebook.webp" alt="" />
+                    </div>
+                </div>
+            </nav>
             <div class="menu-mobile" arial-controls="menu">
                 <span class="menu-mobile-linha"></span>
             </div>
@@ -75,67 +107,77 @@
             <section class="pagina-sobre">
                 <div class="sobre-nos animadoReveal">
                     <h2>Quem somos?</h2>
-                    <div class="imagem-clinica">
-                        <img src="images/equipe/clinica.webp" alt="" />
-                    </div>
-                    <div class="sobre-descricao">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing
-                        elit. Facere corrupti dignissimos deleniti, nemo
-                        repellat, dolorum suscipit tempore, quod itaque quis
-                        reprehenderit sunt hic quas ea quo alias tempora
-                        exercitationem eaque.
+                    <div class="sobre-info">
+                        <div class="imagem-clinica">
+                            <img src="images/equipe/clinica.webp" alt="" />
+                        </div>
+                        <div class="sobre-descricao">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing
+                            elit. Facere corrupti dignissimos deleniti, nemo
+                            repellat, dolorum suscipit tempore, quod itaque quis
+                            reprehenderit sunt hic quas ea quo alias tempora
+                            exercitationem eaque.
+                        </div>
                     </div>
                 </div>
                 <div class="sobre-nos animadoReveal">
                     <h2>Nossa equipe</h2>
-                    <div class="imagem-clinica">
-                        <img src="images/equipe/equipe.webp" alt="" />
-                    </div>
-                    <div class="sobre-descricao">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing
-                        elit. Facere corrupti dignissimos deleniti, nemo
-                        repellat, dolorum suscipit tempore, quod itaque quis
-                        reprehenderit sunt hic quas ea quo alias tempora
-                        exercitationem eaque.
+                    <div class="sobre-info">
+                        <div class="imagem-clinica">
+                            <img src="images/equipe/equipe.webp" alt="" />
+                        </div>
+                        <div class="sobre-descricao">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing
+                            elit. Facere corrupti dignissimos deleniti, nemo
+                            repellat, dolorum suscipit tempore, quod itaque quis
+                            reprehenderit sunt hic quas ea quo alias tempora
+                            exercitationem eaque.
+                        </div>
                     </div>
                 </div>
                 <div class="sobre-nos animadoReveal">
                     <h2>Carla Flores</h2>
-                    <div class="imagem-clinica">
-                        <img src="images/equipe/dentista1.webp" alt="" />
-                    </div>
-                    <div class="sobre-descricao">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing
-                        elit. Facere corrupti dignissimos deleniti, nemo
-                        repellat, dolorum suscipit tempore, quod itaque quis
-                        reprehenderit sunt hic quas ea quo alias tempora
-                        exercitationem eaque.
+                    <div class="sobre-info">
+                        <div class="imagem-clinica">
+                            <img src="images/equipe/dentista1.webp" alt="" />
+                        </div>
+                        <div class="sobre-descricao">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing
+                            elit. Facere corrupti dignissimos deleniti, nemo
+                            repellat, dolorum suscipit tempore, quod itaque quis
+                            reprehenderit sunt hic quas ea quo alias tempora
+                            exercitationem eaque.
+                        </div>
                     </div>
                 </div>
                 <div class="sobre-nos animadoReveal">
                     <h2>Gabriel Torres</h2>
-                    <div class="imagem-clinica">
-                        <img src="images/equipe/dentista2.webp" alt="" />
-                    </div>
-                    <div class="sobre-descricao">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing
-                        elit. Facere corrupti dignissimos deleniti, nemo
-                        repellat, dolorum suscipit tempore, quod itaque quis
-                        reprehenderit sunt hic quas ea quo alias tempora
-                        exercitationem eaque.
+                    <div class="sobre-info">
+                        <div class="imagem-clinica">
+                            <img src="images/equipe/dentista2.webp" alt="" />
+                        </div>
+                        <div class="sobre-descricao">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing
+                            elit. Facere corrupti dignissimos deleniti, nemo
+                            repellat, dolorum suscipit tempore, quod itaque quis
+                            reprehenderit sunt hic quas ea quo alias tempora
+                            exercitationem eaque.
+                        </div>
                     </div>
                 </div>
                 <div class="sobre-nos animadoReveal">
                     <h2>Angelica Medeiros</h2>
-                    <div class="imagem-clinica">
-                        <img src="images/equipe/dentista3.webp" alt="" />
-                    </div>
-                    <div class="sobre-descricao">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing
-                        elit. Facere corrupti dignissimos deleniti, nemo
-                        repellat, dolorum suscipit tempore, quod itaque quis
-                        reprehenderit sunt hic quas ea quo alias tempora
-                        exercitationem eaque.
+                    <div class="sobre-info">
+                        <div class="imagem-clinica">
+                            <img src="images/equipe/dentista3.webp" alt="" />
+                        </div>
+                        <div class="sobre-descricao">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing
+                            elit. Facere corrupti dignissimos deleniti, nemo
+                            repellat, dolorum suscipit tempore, quod itaque quis
+                            reprehenderit sunt hic quas ea quo alias tempora
+                            exercitationem eaque.
+                        </div>
                     </div>
                 </div>
             </section>
