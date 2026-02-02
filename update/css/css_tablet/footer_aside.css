@@ -1,11 +1,12 @@
-@media (min-width: 1000px) {
+@media (min-width: 500px) {
+    
     footer {
         display: flex;
         flex-direction: column;
         text-align: center;
-        justify-content: space-evenly;
+        justify-content: space-between;
         width: 100%;
-        min-height: calc(100dvh - var(--height-header-mobile));
+        min-height: calc(90dvh - var(--height-header-mobile));
         gap: clamp(0.6rem, 3vh, 3rem);
         background-color: rgba(207, 207, 207, 0.384);
         position: relative;
@@ -21,23 +22,19 @@
         font-size: clamp(0.9rem, 4vw, 1.5rem);
         font-family: var(--font-texto-geral);
     }
-    .conteudo-footer{
-        display: flex;
-        justify-content: space-evenly;
-    }
     .footer-icons {
         display: flex;
         width: 100%;
         justify-content: center;
         align-items: center;
-        column-gap: 3.5rem;
+        column-gap: 4rem;
     }
     .footer-icon img {
         text-align: center;
-        width: clamp(20px, 13vw, 50px);
+        width: clamp(35px, 10vw, 45px);
         aspect-ratio: 1/1;
     }
-    .logo-footer h1 {
+    .logo-footer h3 {
         font-family: var(--font-clinica);
         font-weight: 900;
         color: rgb(63, 62, 62);

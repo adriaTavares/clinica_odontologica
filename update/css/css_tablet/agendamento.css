@@ -1,4 +1,4 @@
-@media (min-width: 1000px) {
+@media (min-width: 500px) {
     .formulario_agendamento {
         height: calc(100dvh - var(--height-header-mobile));
         width: 100%;
@@ -14,14 +14,14 @@
     }
 
     .formulario_agendamento form {
-        width: 40%;
+        width: 95%;
         height: 80%;
         display: flex;
         justify-content: space-between;
         align-items: center;
         flex-direction: column;
         background-color: white;
-        border-radius: 20px;
+        border-radius: 5%;
     }
     form .dados-form {
         width: 90%;
@@ -38,7 +38,7 @@
         width: 100%;
         height: clamp(2.5rem, 5vh, 3rem);
         padding: 0 1rem;
-        font-size: clamp(.7rem, 4vh, 1rem);
+        font-size: clamp(1rem, 4vw, 1.5rem);
         background-color: rgba(238, 238, 238, 0.48);
         border: 2px solid rgb(162, 162, 162);
         margin: 1rem;

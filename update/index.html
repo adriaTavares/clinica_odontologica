@@ -29,7 +29,7 @@
 
         <title>Clinica odontológica</title>
     </head>
-    <body>
+    <body class="pagina-home">
         <div class="camadaBloqueadora"></div>
         <header>
             <h1>Novo Sorriso</h1>
@@ -37,6 +37,12 @@
                 <ul class="nav-list">
                     <li class="nav-item active" data-target="inicio">
                         <a href="#inicio">inicio</a>
+                    </li>
+                    <li class="nav-item" data-target="depoimentos">
+                        <a href="#depoimentos">depoimentos</a>
+                    </li>
+                    <li class="nav-item" data-target="localizacao">
+                        <a href="#localizacao">localização</a>
                     </li>
                     <li class="nav-item">
                         <a href="servicos.html">serviços</a>
@@ -47,34 +53,47 @@
                     <li class="nav-item">
                         <a href="./agendamento.html">agendamento</a>
                     </li>
-                    <li class="nav-item" data-target="depoimentos">
-                        <a href="#depoimentos">depoimentos</a>
-                    </li>
-                    <li class="nav-item" data-target="localizacao">
-                        <a href="#localizacao">localização</a>
-                    </li>
                 </ul>
+
                 <div class="desktop-icons">
                     <div class="desktop-app">
-                        <img src="images/apps/whatsapp.webp" alt="" />
+                        <a href="https://w.app/2wmrvy" target="_blank"
+                            ><img src="images/apps/whatsapp.webp" alt=""
+                        /></a>
                     </div>
+
                     <div class="desktop-app">
-                        <img src="images/apps/insta.webp" alt="" />
+                        <a
+                            href="https://www.instagram.com/adriatavares_dev/"
+                            target="_blank"
+                            ><img src="images/apps/insta.webp" alt=""
+                        /></a>
                     </div>
+
                     <div class="desktop-app">
-                        <img src="images/apps/facebook.webp" alt="" />
+                        <a
+                            href="https://www.facebook.com/profile.php?id=61587432176970"
+                            target="_blank"
+                            ><img src="images/apps/facebook.webp" alt=""
+                        /></a>
                     </div>
                 </div>
             </nav>
-
             <div class="menu-mobile" aria-controls="menu">
                 <span class="menu-mobile-linha"></span>
             </div>
         </header>
+
         <nav class="nav-mobile">
             <ul class="nav-list-mobile">
                 <li class="nav-item-mobile active" data-target="inicio">
                     <a href="#inicio">inicio</a>
+                </li>
+                <li class="nav-item-mobile" data-target="depoimentos">
+                    <a href="#depoimentos">depoimentos</a>
+                </li>
+                <li class="nav-item-mobile" data-target="localizacao">
+                    <a href="#localizacao">localização</a>
                 </li>
                 <li class="nav-item-mobile">
                     <a href="servicos.html">serviços</a>
@@ -85,29 +104,33 @@
                 <li class="nav-item-mobile">
                     <a href="./agendamento.html">agendamento</a>
                 </li>
-                <li class="nav-item-mobile" data-target="depoimentos">
-                    <a href="#depoimentos">depoimentos</a>
-                </li>
-                <li class="nav-item-mobile" data-target="localizacao">
-                    <a href="#localizacao">localização</a>
-                </li>
             </ul>
+
             <div class="menu-mobile-footer">
                 <div class="mobile-app-icons">
                     <div class="mobile-app">
-                        <img src="images/apps/whatsapp.webp" alt="" />
+                        <a href="https://w.app/2wmrvy" target="_blank"
+                            ><img src="images/apps/whatsapp.webp" alt=""
+                        /></a>
                     </div>
                     <div class="mobile-app">
-                        <img src="images/apps/insta.webp" alt="" />
+                        <a
+                            href="https://www.instagram.com/adriatavares_dev/"
+                            target="_blank"
+                            ><img src="images/apps/insta.webp" alt=""
+                        /></a>
                     </div>
                     <div class="mobile-app">
-                        <img src="images/apps/facebook.webp" alt="" />
+                        <a
+                            href="https://www.facebook.com/profile.php?id=61587432176970"
+                            target="_blank"
+                            ><img src="images/apps/facebook.webp" alt=""
+                        /></a>
                     </div>
                 </div>
-                <h3>(99)9999-9999</h3>
+                <h3>(82) 99408-6102</h3>
             </div>
         </nav>
-
         <main>
             <section class="animadoReveal" id="inicio">
                 <div class="home-image">
@@ -130,7 +153,7 @@
                         />
                     </picture>
                 </div>
-                <h2>
+                <h2 class="titulo-principal">
                     <span class="span-azul-escuro">Seu</span>
                     sorriso
                     <br />
@@ -142,7 +165,7 @@
                 <button onclick="window.location.href = './agendamento.html'">
                     Agendar consulta
                     <br />
-                    (99) 9999-9999
+                    (82) 99408-6102
                 </button>
             </section>
             <section class="animadoReveal" id="depoimentos">
@@ -271,47 +294,65 @@
         </main>
 
         <footer>
-            <div>
-                <h2>Horário de Expediente</h2>
-                <p>
-                    Seg 9:00 am - 5:00 pm
-                    <br />
-                    Ter 9:00 am - 5:00 pm
-                    <br />
-                    Qua 9:00 am - 5:00 pm
-                    <br />
-                    Qui 9:00 am - 5:00 pm
-                    <br />
-                    Sex 9:00 am - 5:00 pm
-                </p>
-            </div>
-            <div>
-                <h2>Contate-nos</h2>
-                <div class="footer-icons">
-                    <div class="footer-icon">
-                        <img src="images/apps/whatsapp.webp" alt="" />
-                    </div>
-                    <div class="footer-icon">
-                        <img src="images/apps/insta.webp" alt="" />
-                    </div>
-                    <div class="footer-icon">
-                        <img src="images/apps/facebook.webp" alt="" />
-                    </div>
+            <div class="conteudo-footer">
+                <div>
+                    <h2>Horário de Expediente</h2>
+                    <p>
+                        Seg 9:00 am - 5:00 pm
+                        <br />
+                        Ter 9:00 am - 5:00 pm
+                        <br />
+                        Qua 9:00 am - 5:00 pm
+                        <br />
+                        Qui 9:00 am - 5:00 pm
+                        <br />
+                        Sex 9:00 am - 5:00 pm
+                    </p>
                 </div>
-                <p>
-                    (99) 9999-9999
-                    <br />
-                    adria.tavares.2008@gmail.com
-                </p>
-            </div>
-            <div>
-                <h2>Outras redes</h2>
-                <div class="footer-icons">
-                    <div class="footer-icon">
-                        <img src="images/apps/linkedin.webp" alt="" />
+                <div>
+                    <h2>Contate-nos</h2>
+                    <div class="footer-icons">
+                        <div class="footer-icon">
+                            <a href="https://w.app/2wmrvy" target="_blank"
+                                ><img src="images/apps/whatsapp.webp" alt=""
+                            /></a>
+                        </div>
+                        <div class="footer-icon">
+                            <a
+                                href="https://www.instagram.com/adriatavares_dev/"
+                                target="_blank"
+                                ><img src="images/apps/insta.webp" alt=""
+                            /></a>
+                        </div>
+                        <div class="footer-icon">
+                            <a
+                                href="https://www.facebook.com/profile.php?id=61587432176970"
+                                target="_blank"
+                                ><img src="images/apps/facebook.webp" alt=""
+                            /></a>
+                        </div>
                     </div>
-                    <div class="footer-icon">
-                        <img src="images/apps/github.webp" alt="" />
+                    <p>
+                        (82) 99408-6102
+                        <br />
+                        adria.tavares.2008@gmail.com
+                    </p>
+                    <h2>Outras redes</h2>
+                    <div class="footer-icons">
+                        <div class="footer-icon">
+                            <a
+                                href="https://www.linkedin.com/in/adria-tavares-da-silva/"
+                                target="_blank"
+                                ><img src="images/apps/linkedin.webp" alt=""
+                            /></a>
+                        </div>
+                        <div class="footer-icon">
+                            <a
+                                href="https://github.com/adriaTavares"
+                                target="_blank"
+                                ><img src="images/apps/github.webp" alt=""
+                            /></a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -323,7 +364,6 @@
         <script src="js/formatacao_index/formatador_universal.js"></script>
         <script src="js/formatacao_index/fechar_menu.js"></script>
         <script src="js/menu/menu.js"></script>
-        <script src="js/slide/desktop.js"></script>
-        <script src="js/slide/mobile.js"></script>
+        <script src="js/slide/slide.js"></script>
     </body>
 </html>

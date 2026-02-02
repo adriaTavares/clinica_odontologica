@@ -6,7 +6,7 @@ main {
     gap: 5rem;
     width: 100%;
 }
-@media (max-width: 600px) {
+@media (max-width: 500px) {
     section {
         scroll-margin-top: var(--height-header-mobile);
     }

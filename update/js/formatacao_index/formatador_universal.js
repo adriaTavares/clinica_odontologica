@@ -1,10 +1,8 @@
 const itensMenuHome = [
-    ...document.querySelectorAll(".nav-item-mobile[data-target]")
+    ...document.querySelectorAll('[class*="nav-item"][data-target]'),
 ];
 
-const sectionsParaMenu = [
-    ...document.querySelectorAll("section[id]")
-];
+const sectionsParaMenu = [...document.querySelectorAll("section[id]")];
 
 function modificadorMenu(entries) {
     entries.forEach((entry) => {
@@ -13,13 +11,13 @@ function modificadorMenu(entries) {
         const id = entry.target.id;
 
         const itemAtivo = itensMenuHome.find(
-            (item) => item.dataset.target === id
+            (item) => item.dataset.target === id,
         );
 
         if (!itemAtivo) return;
 
         itensMenuHome.forEach((item) =>
-            item.classList.toggle("active", item === itemAtivo)
+            item.classList.toggle("active", item === itemAtivo),
         );
     });
 }
@@ -30,6 +28,4 @@ const observerMenu = new IntersectionObserver(modificadorMenu, {
     threshold: 0,
 });
 
-sectionsParaMenu.forEach((section) =>
-    observerMenu.observe(section)
-);
+sectionsParaMenu.forEach((section) => observerMenu.observe(section));
