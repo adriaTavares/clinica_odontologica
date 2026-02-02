@@ -6,12 +6,15 @@ práticas de front-end.
 
 ## 📸 Preview
 
-1. Moblie
-   ![mobile](./imagens_markdown/mobile.png)
-2. Tablet
-   ![tablet](./imagens_markdown/tablet.png)
-3. Desktop
-   ![Desktop](imagens_markdown/desktop.png)
+### Mobile
+![Mobile](./imagens_markdown/mobile.png)
+
+### Tablet
+![Tablet](./imagens_markdown/tablet.png)
+
+### Desktop
+![Desktop](./imagens_markdown/desktop.png)
+
 
 ## 🚀 Funcionalidades
 
