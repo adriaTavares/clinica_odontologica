@@ -3,7 +3,8 @@
 Projeto de site institucional responsivo para uma clínica odontológica fictícia,
 desenvolvido com foco em organização de código, experiência do usuário (UX) e boas
 práticas de front-end.
-
+## Link
+ https://adriatavares.github.io/clinica_odontologica/
 ## 📸 Preview
 
 ### Mobile
